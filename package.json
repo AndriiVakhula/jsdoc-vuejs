@@ -1,7 +1,8 @@
 {
-  "name": "jsdoc-vuejs",
-  "version": "0.0.0-development",
+  "name": "@avakhula/jsdoc-vuejs",
+  "version": "0.0.1",
   "description": "A JSDoc plugin for documenting vue 3 files.",
+  "private": false,
   "main": "index.js",
   "files": [
     "lib",
@@ -9,12 +10,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "lint": "eslint --ext .js index.js config.js lib __tests__ cypress",
-    "semantic-release": "semantic-release"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Kocal/jsdoc-vuejs"
+    "lint": "eslint --ext .js index.js config.js lib __tests__ cypress"
   },
   "keywords": [
     "jsdoc",
@@ -25,10 +21,6 @@
   ],
   "author": "Hugo Alliaume <hugo@alliau.me>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Kocal/jsdoc-vuejs/issues"
-  },
-  "homepage": "https://github.com/Kocal/jsdoc-vuejs#readme",
   "engines": {
     "node": "^10.13.0 || >=12.0.0"
   },
@@ -36,11 +28,10 @@
     "ejs": "^3.0.1"
   },
   "peerDependencies": {
-    "jsdoc": ">=3.0.0",
-    "@vue/compiler-sfc": ">= 3.0.0"
+    "@vue/compiler-sfc": ">= 3.0.0",
+    "jsdoc": ">=3.0.0"
   },
   "devDependencies": {
-    "@kocal/semantic-release-preset": "^2.0.6",
     "@vue/compiler-sfc": "^3.1.4",
     "cypress": "^4.0.1",
     "eslint": "^6.2.0",
@@ -48,7 +39,6 @@
     "eslint-plugin-cypress": "^2.0.1",
     "eslint-plugin-import": "^2.13.0",
     "jest": "^24.0.0",
-    "jsdoc": "^3.6.2",
-    "semantic-release": "^17.1.1"
+    "jsdoc": "^3.6.2"
   }
 }

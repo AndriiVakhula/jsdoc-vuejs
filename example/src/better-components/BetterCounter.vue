@@ -21,6 +21,7 @@
    * @vue-computed {String} message A message
    * @vue-event {Number} increment - Emit counter's value after increment
    * @vue-event {Number} decrement - Emit counter's value after decrement
+   * @vue-global-event {Number} increment - Global emit counter's value after increment
    */
   export default {
     props: {
@@ -48,6 +49,9 @@
       increment() {
         this.counter += this.step;
         this.$emit('increment', this.counter);
+        this.$emit('increment', this.counter);
+
+        this.$globalEvents.$emit("increment", this);
       },
 
       /**
